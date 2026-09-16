@@ -251,6 +251,37 @@ button {
   z-index: 1;
 }
 
+.hero-photo {
+  width: 100%;
+  max-width: 290px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin-top: 10px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.28);
+}
+
+.qr-card {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 110px;
+  height: 110px;
+  padding: 8px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.qr-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .meme-badge {
   display: inline-flex;
   padding: 8px 12px;
@@ -460,15 +491,15 @@ video {
 }
 
 .thumb-one {
-  background-image: linear-gradient(135deg, rgba(255,79,179,0.8), rgba(255,216,77,0.5)), url('https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=300&q=80');
+  background-image: linear-gradient(135deg, rgba(255,79,179,0.8), rgba(255,216,77,0.5)), url('meme-data/meme-hebe-30.jpg');
 }
 
 .thumb-two {
-  background-image: linear-gradient(135deg, rgba(91,124,255,0.75), rgba(255,79,179,0.35)), url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80');
+  background-image: linear-gradient(135deg, rgba(91,124,255,0.75), rgba(255,79,179,0.35)), url('meme-data/meme-hebe-30.jpg');
 }
 
 .thumb-three {
-  background-image: linear-gradient(135deg, rgba(83,230,163,0.7), rgba(255,216,77,0.28)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=300&q=80');
+  background-image: linear-gradient(135deg, rgba(83,230,163,0.7), rgba(255,216,77,0.28)), url('meme-data/meme-hebe-30.jpg');
 }
 
 .ranking-item h3 {
