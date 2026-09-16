@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Aniversário da Helena com tema inspirado no meme clássico da Hebe."
+      content="Aniversário da Helena com tema inspirado no meme clássico da Hebe e visual mágico da Disney Princess."
     />
     <meta property="og:title" content="Helena 15 anos" />
     <meta
@@ -24,60 +24,30 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar">
-        <div class="brand">
-          <span class="brand-mark">🎉</span>
-          <span>Helena 15 anos</span>
-        </div>
-        <button class="ghost-button" id="copyLinkBtn">Copiar link</button>
-      </header>
+      <main class="single-video-page">
+        <section class="video-card card" id="videoSection">
+          <div class="brand-row">
+            <div class="brand">
+              <span class="brand-mark">🎉</span>
+              <span>Helena 15 anos</span>
+            </div>
+            <button class="ghost-button" id="copyLinkBtn">Compartilhar</button>
+          </div>
 
-      <main>
-        <section class="hero card">
-          <div class="hero-copy">
-            <p class="eyebrow">Você vai rir, vai compartilhar e vai lembrar pra sempre</p>
+          <div class="title-wrap">
+            <p class="eyebrow">Meme oficial da festa</p>
+            <div class="birthday-badge">🎂 Feliz aniversário, Helena! 🎉</div>
             <h1>É que breve completarei 15 anos...</h1>
-            <p class="subtitle">
-              Mas você fará 15 anos e está com cara de 61. Venha curtir o meme, criar
-              sua figurinha e deixar o evento ainda mais viral.
-            </p>
-            <div class="hero-actions">
-              <button class="primary-button" id="watchVideoBtn">Assistir ao vídeo</button>
-              <button class="secondary-button" id="stickerBtn">Criar figurinha</button>
-            </div>
-            <div class="stats-row">
-              <div>
-                <strong id="videoCounter">1.2k</strong>
-                <span>visualizações</span>
-              </div>
-              <div>
-                <strong>430</strong>
-                <span>figurinhas</span>
-              </div>
-              <div>
-                <strong>98%</strong>
-                <span>engajamento</span>
-              </div>
-            </div>
+            <p class="subtitle">Mas você fará 15 anos e está com cara de 61.</p>
           </div>
-          <div class="hero-art">
-            <div class="burst burst-one"></div>
-            <div class="burst burst-two"></div>
-            <div class="meme-card">
-              <div class="meme-badge">meme oficial</div>
-              <div class="meme-quote">“Você fará 15 anos<br />mas está com cara de 61”</div>
-              <div class="face-illustration">😎</div>
-            </div>
-          </div>
-        </section>
 
-        <section class="video-section card" id="videoSection">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Momento obrigatório</p>
-              <h2>Vídeo do meme</h2>
-            </div>
-            <div class="chip">Replay ilimitado</div>
+          <div class="photo-strip" aria-label="Fotos da Helena">
+            <img src="meme-data/fotos-helena/527f0b6d-5de6-4df9-bbae-14234c610ff9.jpg" alt="Helena foto 1" />
+            <img src="meme-data/fotos-helena/bc97bccc-f315-4482-9fa2-691086a94796.jpg" alt="Helena foto 2" />
+            <img src="meme-data/fotos-helena/0dd720ec-ec64-45fe-b9b8-8e792f164d82.jpg" alt="Helena foto 3" />
+            <img src="meme-data/fotos-helena/820f8f88-f595-434b-b18d-a6e0560d1a54.jpg" alt="Helena foto 4" />
+            <img src="meme-data/fotos-helena/98e1d950-11d6-44a6-a60d-982be2ff7ad8.jpg" alt="Helena foto 5" />
+            <img src="meme-data/fotos-helena/6ba23c09-c32d-4886-850c-3be6b39171c8.jpg" alt="Helena foto 6" />
           </div>
 
           <div class="video-wrap">
@@ -86,131 +56,16 @@
               controls
               playsinline
               preload="metadata"
-              poster="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+              poster="meme-data/meme-hebe-30.jpg"
             >
-              <source
-                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-                type="video/mp4"
-              />
+              <source src="meme-data/Meme%20Hebe%20-%2015%20Anos.mp4" type="video/mp4" />
               Seu navegador não suporta vídeo HTML5.
             </video>
           </div>
 
           <div class="video-actions">
             <button class="primary-button" id="replayBtn">Repetir</button>
-            <button class="secondary-button" id="shareEventBtn">Compartilhar evento</button>
-          </div>
-        </section>
-
-        <section class="sticker-section card" id="stickerSection">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Crie sua versão</p>
-              <h2>Gerador de figurinha</h2>
-            </div>
-          </div>
-
-          <div class="sticker-layout">
-            <div class="upload-panel">
-              <label for="photoInput" class="upload-box">
-                <span class="upload-icon">📸</span>
-                <span>Selecione uma foto</span>
-              </label>
-              <input id="photoInput" type="file" accept="image/*" hidden />
-
-              <div class="field-group">
-                <label for="memeText">Texto da figurinha</label>
-                <input id="memeText" type="text" value="É que breve completarei 15 anos" maxlength="40" />
-              </div>
-
-              <div class="field-group">
-                <label for="memeSubtext">Frase final</label>
-                <input id="memeSubtext" type="text" value="Mas está com cara de 61" maxlength="40" />
-              </div>
-
-              <button class="primary-button full" id="generateStickerBtn">Gerar figurinha</button>
-            </div>
-
-            <div class="preview-panel">
-              <canvas id="stickerCanvas" width="900" height="1200"></canvas>
-              <div class="preview-actions">
-                <button class="secondary-button" id="downloadPngBtn">Download PNG</button>
-                <button class="secondary-button" id="downloadWebpBtn">Download WEBP</button>
-                <button class="ghost-button" id="shareStickerBtn">Compartilhar</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="gallery-section card">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Memórias do evento</p>
-              <h2>Galeria</h2>
-            </div>
-            <div class="chip">#Helena15</div>
-          </div>
-
-          <div class="gallery-grid">
-            <figure class="gallery-item tall">
-              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Foto do evento" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Foto do evento" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Foto do evento" />
-            </figure>
-            <figure class="gallery-item wide">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Foto do evento" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=80" alt="Foto do evento" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Foto do evento" />
-            </figure>
-          </div>
-        </section>
-
-        <section class="ranking-section card">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Quem está roubando a cena</p>
-              <h2>Ranking das figurinhas</h2>
-            </div>
-          </div>
-
-          <div class="ranking-list" id="rankingList">
-            <article class="ranking-item winner">
-              <span class="rank">1</span>
-              <div class="mini-thumb thumb-one"></div>
-              <div>
-                <h3>Mila + 61</h3>
-                <p>1.2k reações</p>
-              </div>
-              <button class="reaction-button">😂</button>
-            </article>
-
-            <article class="ranking-item">
-              <span class="rank">2</span>
-              <div class="mini-thumb thumb-two"></div>
-              <div>
-                <h3>João e a crise de idade</h3>
-                <p>980 reações</p>
-              </div>
-              <button class="reaction-button">😆</button>
-            </article>
-
-            <article class="ranking-item">
-              <span class="rank">3</span>
-              <div class="mini-thumb thumb-three"></div>
-              <div>
-                <h3>Helena 15 anos</h3>
-                <p>760 reações</p>
-              </div>
-              <button class="reaction-button">🔥</button>
-            </article>
+            <button class="secondary-button" id="shareEventBtn">Compartilhar link</button>
           </div>
         </section>
       </main>
