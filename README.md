@@ -34,3 +34,5 @@ Este projeto pode ser publicado diretamente no GitHub Pages com a branch `main` 
 - `index.html` - estrutura da página
 - `styles.css` - design e responsividade mobile
 - `script.js` - interações e geração da figurinha
+
+> Site do aniversário público para convidados do evento.
